@@ -4,46 +4,11 @@ $version: "0.5.3";
 // Core features
 $rtl: false !default;
 
-// Core colors
-$primary-color: #3085EE !default;
-$primary-color-dark: darken($primary-color, 3%) !default;
-$primary-color-light: lighten($primary-color, 3%) !default;
-$secondary-color: lighten($primary-color, 37.5%) !default;
-$secondary-color-dark: darken($secondary-color, 3%) !default;
-$secondary-color-light: lighten($secondary-color, 3%) !default;
-
-// Gray colors
-$dark-color: #454d5d !default;
-$light-color: #fff !default;
-$gray-color: lighten($dark-color, 40%) !default;
-$gray-color-dark: darken($gray-color, 25%) !default;
-$gray-color-light: lighten($gray-color, 20%) !default;
-
-$border-color: lighten($dark-color, 60%) !default;
-$border-color-dark: darken($border-color, 10%) !default;
-$bg-color: lighten($dark-color, 66%) !default;
-$bg-color-dark: darken($bg-color, 3%) !default;
-$bg-color-light: $light-color !default;
-
-// Control colors
-$success-color: #32b643 !default;
-$warning-color: #ffb700 !default;
-$error-color: #e85600 !default;
-
-// Other colors
-$code-color: #d73e48 !default;
-$highlight-color: #ffe9b3 !default;
-$body-bg: $bg-color-light !default;
-$body-font-color: lighten($dark-color, 5%) !default;
-$link-color: $primary-color !default;
-$link-color-dark: darken($link-color, 10%) !default;
-$link-color-light: lighten($link-color, 10%) !default;
-
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+$base-font-family: "Titillium-Web", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
 $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
-$fallback-font-family: "Helvetica Neue", sans-serif !default;
+$fallback-font-family: "Titillium-Web", "Helvetica Neue", sans-serif !default;
 $cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
 $cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei", $fallback-font-family !default;
 $cjk-jp-font-family: $base-font-family, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo, $fallback-font-family !default;
@@ -72,6 +37,7 @@ $html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;
 $font-size-lg: .9rem !default;
+$font-size-xl: 1.2rem !default;
 $line-height: 1.2rem !default;
 
 // Sizes
@@ -114,3 +80,25 @@ $zindex-1: 100 !default;
 $zindex-2: 200 !default;
 $zindex-3: 300 !default;
 $zindex-4: 400 !default;
+$zindex-5: 500 !default;
+$zindex-6: 600 !default;
+$zindex-7: 700 !default;
+$zindex-8: 800 !default;
+$zindex-9: 900 !default;
+
+// Nucleus Breakpoints (using values from Spectre responsive breakpoints
+$breakpoints-large-desktop-container:       72.000rem !default;
+$breakpoints-desktop-container:             64.000rem !default;
+$breakpoints-tablet-container:              42.000rem !default;
+$breakpoints-large-mobile-container:        30.000rem !default;
+$breakpoints-mobile-container:              100% !default;
+
+// Breakpoint Variables for Nucleus Breakpoints
+$media: "all" !default;
+$mobile-only: "#{$media} and (max-width:#{$breakpoints-tablet-container - 0.062})" !default;
+$no-mobile: "#{$media} and (min-width:#{$breakpoints-tablet-container})" !default;
+$small-mobile-range: "#{$media} and (max-width:#{$breakpoints-large-mobile-container})" !default;
+$large-mobile-range: "#{$media} and (min-width:#{$breakpoints-large-mobile-container + 0.063}) and (max-width:#{$breakpoints-tablet-container - 0.062})" !default;
+$tablet-range: "#{$media} and (min-width:#{$breakpoints-tablet-container}) and (max-width:#{$breakpoints-desktop-container - 0.062})" !default;
+$desktop-range: "#{$media} and (min-width:#{$breakpoints-desktop-container}) and (max-width:#{$breakpoints-large-desktop-container - 0.062})" !default;
+$large-desktop-range: "#{$media} and (min-width:#{$breakpoints-large-desktop-container})" !default;

@@ -1,0 +1,91 @@
+// Layout
+$horiz-padding:                     1rem;
+$vert-padding:                      2rem 0 2rem;
+
+// Core colors
+$primary-color:                     #212027 !default;
+$primary-color-dark:                darken($primary-color, 3%) !default;
+$primary-color-light:               lighten($primary-color, 3%) !default;
+$secondary-color:                   #f22f08 !default;
+$secondary-color-dark:              darken($secondary-color, 3%) !default;
+$secondary-color-light:             lighten($secondary-color, 3%) !default;
+
+// Gray colors
+$dark-color:                        $primary-color !default;
+$light-color:                       #ffffff !default;
+$gray-color:                        lighten($dark-color, 50%) !default;
+$gray-color-dark:                   darken($gray-color, 15%) !default;
+$gray-color-light:                  lighten($gray-color, 5%) !default;
+
+$border-color:                      lighten($dark-color, 60%) !default;
+$border-color-dark:                 darken($border-color, 10%) !default;
+$bg-color:                          lighten($dark-color, 66%) !default;
+$bg-color-dark:                     darken($bg-color, 3%) !default;
+$bg-color-light:                    $light-color !default;
+
+// Control colors
+$success-color:                     #32b643 !default;
+$warning-color:                     #ffb700 !default;
+$error-color:                       #e85600 !default;
+
+// Other colors
+$code-color:                        #d73e48 !default;
+$highlight-color:                   #ffe9b3 !default;
+$body-bg:                           $bg-color-light !default;
+$body-font-color:                   $dark-color !default;
+$link-color:                        $secondary-color !default;
+$link-color-dark:                   darken($link-color, 10%) !default;
+$link-color-light:                  lighten($link-color, 10%) !default;
+
+// Fonts
+$min-responsive-font-size:          16px;
+$title-font-family:                 $base-font-family, $fallback-font-family !default;
+
+// Header
+$header-height-large:               8.5rem;
+$header-height-small:               5rem;
+$header-color-dark:                 #222;
+$header-text-light:                 $light-color;
+$header-text-dark:                  darken($dark-color, 15%);
+
+// Footer
+$footer-padding-medium:             5rem;
+$footer-padding-large:              13rem;
+$footer-margin-large:               6rem;
+
+// Dropdown Menu
+$dropmenu-bg:                       $light-color;
+$dropmenu-hover-text:               $primary-color;
+$dropmenu-horiz-padding:            20px;
+$dropmenu-vert-padding:             7px;
+$dropmenu-child-padding:            10px;
+$dropmenu-shadow:                   0 3px 5px rgba(0, 0, 0, 0.1);
+
+// Mobile Menu
+$mobile-color-main:                 #ffffff;
+$mobile-color-active:               $secondary-color;
+$mobile-color-link:                 #ffffff;
+$mobile-button-height:              24px;
+$mobile-button-width:               28px;
+
+// Font Weights
+$font-weight-thin:                  100 !default;
+$font-weight-extralight:            200 !default;
+$font-weight-light:                 300 !default;
+$font-weight-regular:               400 !default;
+$font-weight-medium:                500 !default;
+$font-weight-semibold:              600 !default;
+$font-weight-bold:                  700 !default;
+$font-weight-black:                 900 !default;
+
+// Section Horizontal Paddings
+$section-horizontal-padding:        10%;
+$section-horizontal-padding-large:  15%;
+$section-horizontal-padding-small:  5%;
+$section-horizontal-padding-tiny:   2.5%;
+
+// Section Vertical Paddings
+$section-vertical-padding:          4vw;
+$section-vertical-padding-large:    6vw;
+$section-vertical-padding-small:    2vw;
+$section-vertical-padding-tiny:     1vw;

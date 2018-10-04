@@ -1,20 +1,30 @@
-// Core variables and mixins
+// Variables
 @import 'spectre/variables';
+@import 'theme/core/variables';
+
+// Mixins
 @import 'spectre/mixins';
+@import 'theme/mixins/base';
 
-@import 'theme/variables';
-@import 'theme/mixins';
-@import 'theme/framework';
-@import 'theme/typography';
-@import 'theme/forms';
-@import 'theme/mobile';
-@import 'theme/animation';
+// Core
+@import 'theme/core/framework';
+@import 'theme/core/typography';
+@import 'theme/core/forms';
+@import 'theme/core/mobile';
+@import 'theme/core/animation';
+@import 'theme/core/utilities';
 
-@import 'theme/header';
-@import 'theme/footer';
-@import 'theme/menu';
+// Sections
+@import 'theme/sections/header';
+@import 'theme/sections/footer';
 
-// Extra Skeleton Styling
-@import 'theme/blog';
-@import 'theme/onepage';
+// Modular
 
+// Partials
+@import 'theme/partials/menu';
+@import 'theme/partials/horizontal-menu';
+@import 'theme/partials/hero';
+
+// Views
+@import 'theme/views/blog';
+@import 'theme/views/onepage';

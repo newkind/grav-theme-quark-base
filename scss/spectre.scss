@@ -1,5 +1,9 @@
-// Variables and mixins
+// Variables
 @import "spectre/variables";
+@import "theme/core/variables";
+
+// Fonts and Mixins
+@import "spectre/fonts";
 @import "spectre/mixins";
 
 /*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
@@ -48,4 +52,4 @@
 @import "spectre/utilities";
 
 // Extras
-@import "theme/extensions";
+@import "theme/core/extensions";

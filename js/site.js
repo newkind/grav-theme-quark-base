@@ -14,7 +14,6 @@ function parallaxBackground() {
 }
 
 jQuery(document).ready(function($){
-
     scrollHeader();
 
     // Scroll Events
@@ -32,7 +31,7 @@ jQuery(document).ready(function($){
         }
     });
 
-    //Smooth scroll to start
+    // Smooth scroll to start
     $('#to-start').click(function(){
         var start_y = $('#start').position().top;
         var header_offset = 45;
@@ -40,7 +39,7 @@ jQuery(document).ready(function($){
         return false;
     });
 
-    //Smooth scroll to top
+    // Smooth scroll to top
     $('#to-top').click(function(){
         window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         return false;
@@ -55,5 +54,4 @@ jQuery(document).ready(function($){
 
     // Tree Menu
     $(".tree").treemenu({delay:300});
-
 });

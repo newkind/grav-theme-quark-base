@@ -1,15 +1,15 @@
-name: Quark
-version: 1.2.1
-description: New Grav Default Theme
+name: Quark Base
+version: 1.0.0
+description: Modified Grav Quark theme for my own needs. Mostly file structure changes.
 icon:  microchip
 author:
   name: Team Grav
   email: devs@getgrav.org
   url: http://getgrav.org
-homepage: https://github.com/getgrav/grav-theme-quark
+homepage: https://github.com/newkind/grav-theme-quark-base
 demo: https://demo.getgrav.org/onepage-skeleton
-keywords: quark, spectre, theme, core, modern, fast, responsive, html5, css3
-bugs: https://github.com/getgrav/grav-theme-quark/issues
+keywords: quark, base, spectre, theme, core, modern, fast, responsive, html5, css3
+bugs: https://github.com/newkind/grav-theme-quark-base
 license: MIT
 
 dependencies:

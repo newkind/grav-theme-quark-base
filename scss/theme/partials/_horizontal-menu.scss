@@ -1,0 +1,14 @@
+// Horizontal menu
+.horizontal-menu {
+    margin: 0;
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        margin: 0;
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+}

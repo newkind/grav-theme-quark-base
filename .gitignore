@@ -1,2 +1,15 @@
+# Sass
+.sass-cache
+
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+*.swp
+
+# phpstorm
+.idea/*
+
+# Theme
 node_modules
 images/logo/*
