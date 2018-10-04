@@ -1,0 +1,11 @@
+{% if page.header.show_date or page.header.show_taxonomy %}
+    <div class="content-item-meta">
+        {% if page.header.show_date %}
+            {% include 'partials/meta/date.html.twig' %}
+        {% endif %}
+
+        {% if page.header.show_taxonomy %}
+            {% include 'partials/meta/taxonomy.html.twig' %}
+        {% endif %}
+    </div>
+{% endif %}
