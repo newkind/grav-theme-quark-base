@@ -30,11 +30,10 @@
 
         {% embed 'partials/layout.html.twig' with {blog: page} %}
             {% block item %}
-
                 <div class="bricklayer">
-                {% for child in collection %}
-                    {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
-                {% endfor %}
+                    {% for child in collection %}
+                        {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
+                    {% endfor %}
                 </div>
 
                 {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
@@ -42,7 +41,6 @@
                         {% include 'partials/pagination.html.twig' with {base_url: page.url, pagination: collection.params.pagination} %}
                     </div>
                 {% endif %}
-
             {% endblock %}
 
             {% block sidebar %}
@@ -51,9 +49,10 @@
         {% endembed %}
         </section>
     </section>
+
     <script>
-        //Bricklayer
-        var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
+        // Bricklayer
+        var bricklayer = new Bricklayer(document.querySelector('.bricklayer'));
     </script>
 {% endblock %}
 

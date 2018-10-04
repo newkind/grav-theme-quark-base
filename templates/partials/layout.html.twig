@@ -5,10 +5,11 @@
     <div id="item" class="column {{ item_col }} extra-spacing">
         {% block item %}{% endblock %}
     </div>
+
     {% if show_sidebar %}
-    <div id="sidebar" class="column {{ sidebar_col }}">
-        {% block sidebar %}{% endblock %}
-    </div>
+        <div id="sidebar" class="column {{ sidebar_col }}">
+            {% block sidebar %}{% endblock %}
+        </div>
     {% endif %}
 </div>
 
