@@ -11,11 +11,27 @@
     h1 {
         color: $header-text-dark;
         font-size: 4rem;
+
+        @include breakpoint(md) {
+            font-size: 3rem;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 2rem;
+        }
     }
 
     h2 {
         color: rgba($header-text-dark, 0.8);
         font-size: 2.5rem;
+
+        @include breakpoint(md) {
+            font-size: 1.75rem;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 1.25rem;
+        }
     }
 
     h3 {
@@ -25,6 +41,14 @@
         font-size: 1.8rem;
         font-weight: $font-weight-regular;
         text-align: left;
+
+        @include breakpoint(md) {
+            width: 100%;
+        }
+
+        @include breakpoint(sm) {
+            width: 100%;
+        }
     }
 
     // Hero Size
@@ -67,34 +91,6 @@
 
     &.hero-align-bottom {
         align-items: end;
-    }
-
-    @include breakpoint(md) {
-        h1 {
-            font-size: 3rem;
-        }
-
-        h2 {
-            font-size: 1.75rem;
-        }
-
-        h3 {
-            width: 100%;
-        }
-    }
-
-    @include breakpoint(sm) {
-        h1 {
-            font-size: 2rem;
-        }
-
-        h2 {
-            font-size: 1.25rem;
-        }
-
-        h3 {
-            width: 100%;
-        }
     }
 
     &.text-light {
